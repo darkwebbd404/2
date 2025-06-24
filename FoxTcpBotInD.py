@@ -19,7 +19,7 @@ isroom2 = False
 paylod_token1 = "3a07312e3131312e32aa01026172b201203535656437353966636639346638353831336535376232656338343932663563ba010134ea0140366662376664656638363538666430333137346564353531653832623731623231646238313837666130363132633865616631623633616136383766316561659a060134a2060134ca03203734323862323533646566633136343031386336303461316562626665626466"
 freefire_version = "ob49"
 client_secret = "2ee44819e9b4598845141067b281621874d0d5d7af9d8f7e00c1e54715b7d1e3"
-chat_ip = "202.81.109.35"
+chat_ip = "202.81.108.102"
 chat_port = 39699
 key2 = "projects_xxx_3ei93k_codex_xdfox"
 
@@ -2005,8 +2005,6 @@ Please check again
 	                parsed_data = json.loads(json_result)
 	                user_name = parsed_data['5']['data']['9']['data']['1']['data']
 	                uid = parsed_data["5"]["data"]["1"]["data"]
-	                player_time_left = get_time(uid)
-	                clients.send(self.GenResponsMsg(player_time_left, uid))
 	                response_message = f"""
 [C][B][00FFFF]━━━━━━━━━━━━
 
@@ -2288,7 +2286,7 @@ for thread in threads:
     
 if __name__ == "__main__":
     try:
-        client_thread = FF_CLIENT(id="3792083466", password="DCE3358E70A96414C4D50CB3C5557F0EE2BFFC68654181E1B0ED45BBE1E8D0B5")
+        client_thread = FF_CLIENT(id="3987815200", password="B17E6BB8C9046D75DE76146FD7730470BB94AE42EA37D40D5C22313689E874F6")
         client_thread.start()
     except Exception as e:
         logging.error(f"Error occurred: {e}")
