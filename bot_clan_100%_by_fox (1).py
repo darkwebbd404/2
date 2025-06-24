@@ -2384,7 +2384,7 @@ for thread in threads:
     
 if __name__ == "__main__":
     try:
-        client_thread = FF_CLIENT(id="3965006993", password="06DECEC5FAC888C86563C17E63D39F14E9CFA6BFF0250BD3F88D02E280BBA392")
+        client_thread = FF_CLIENT(id="3987815200", password="B17E6BB8C9046D75DE76146FD7730470BB94AE42EA37D40D5C22313689E874F6")
         client_thread.start()
     except Exception as e:
         logging.error(f"Error occurred: {e}")
